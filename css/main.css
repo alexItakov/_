@@ -217,7 +217,7 @@ body {
   height: 100%;
   position: relative;
   vertical-align: top;
-  z-index: -1;
+  z-index: 1;
   margin-top: 80px;
 }
 
@@ -240,6 +240,7 @@ body {
   top: -3%;
   left: 27%;
   height: 8%;
+  z-index: 2
 }
 
 #top_bg img {
@@ -254,6 +255,7 @@ body {
   position: fixed;
   top: 95%;
   left: 19%;
+  z-index: 2;
 }
 
 #bot_bg img {
@@ -273,7 +275,7 @@ body {
   box-shadow: 0px 4px 1px 0px rgba(143,116,104,.7);
   background-size: 7%;
 
-  z-index: 0;
+  z-index: 2;
 
 }
 
@@ -285,6 +287,7 @@ body {
   width: 55.7%;
   background: url(../img/bg_ramka.png);
   background-size: 5%;
+  z-index: 2
 }
 
 #right_frame {
@@ -295,6 +298,7 @@ body {
   height: 81.7%;
   background: url(../img/bg_ramka.png);
   background-size: 2%;
+  z-index: 2
 }
 
 
@@ -844,10 +848,33 @@ cursor: pointer;
 }
 
 #gallery_grid {
-  margin-top: 2%;
+  margin-top: 5%;
   width: 114%;
   left: -6%;
   position: relative;
+  vertical-align: top;
+
+}
+
+
+#gallery_grid2 {
+  margin-top: -1%;
+  width: 114%;
+  left: -6%;
+  position: relative;
+  vertical-align: top;
+
+}
+
+
+#gallery_grid3 {
+  margin-top: -10%;
+  width: 114%;
+  left: -6%;
+  position: relative;
+  vertical-align: top;
+  position: absolute;
+
 }
 
 #col1 {
@@ -859,6 +886,8 @@ cursor: pointer;
   vertical-align: top;
   margin: -6px;
   margin-top: 10px;
+  overflow: hidden;
+  
 }
 
 #col2 {
@@ -870,6 +899,8 @@ cursor: pointer;
   vertical-align: top;
   margin: -6px;
   margin-top: 10px;
+  overflow: hidden;
+  
 }
 
 #col1 a {
@@ -895,7 +926,14 @@ cursor: pointer;
 
 .col-up {
   margin-top: 0% !important;
-  height: 100px !important;
+  /*height: 100px !important;*/
+}
+
+.col-up-gr3 {
+  margin-top: 0% !important;
+  /*height: 100px !important;*/
+
+  height: 60px !important;
 }
 
 
@@ -909,20 +947,29 @@ cursor: pointer;
   display: block;
   position: relative;
   float: left;
-  
   vertical-align: top;
   margin: 0px;
   z-index: 7;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   opacity: 0.7;
+  -webkit-opacity: 0.7;
   overflow: hidden;
   cursor: pointer;
-
-
+  top: 109px;
 }
+
+
 .ithem:hover {
- transition: all 0.3s linear;
- opacity: 1;
+
+  -webkit-transition: all 0.3s linear; 
+  -0-transition: all 0.3s linear; 
+  -ms- transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  transition: all 0.3s linear;
+
+  -webkit-opacity:1;
+  opacity: 1;
 
 }
 
@@ -944,9 +991,11 @@ cursor: pointer;
 
 .ithem img {
   width: 100%;
-  height: 100%;
+  height: 100%; 
 
 }
+
+
 
 .size-h25 {
   height: 25%;
@@ -964,18 +1013,16 @@ cursor: pointer;
 }
 
 
-
 #octobivan {
   position: absolute;
   width: 41%;
   height: 40%;
   left: 29%;
-  top: 59%;
+  top: -55%;
 }
 
-
 #octObivan {
- height: 75%;
+  height: 136%;
 }
 #octObivan img {
   height: 100%;
@@ -1133,13 +1180,15 @@ cursor: pointer;
 
   }
 
+
   #top_bg {
     position: fixed;
     top: -4%;
     left: 35.8%;
-
     height: 6%;
-    height: 10%;
+    height: 125%;
+    height: 11%;
+    width: 86%;
   }
 
   #bot_bg {
@@ -1455,8 +1504,31 @@ transition: all 400ms;
 
 
 
+#gallery_grid {
+  margin-top: 2%;
+  width: 114%;
+  left: -6%;
+  position: relative;
+}
 
 
+.ithem {
+  width: 48%;
+  border: 1px solid #623D16;
+  display: block;
+  position: relative;
+  float: left;
+  vertical-align: top;
+  margin: 0px;
+  z-index: 7;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0.7;
+  -webkit-opacity: 0.7;
+  overflow: hidden;
+  cursor: pointer;
+  top: 161px;
+}
 
 
 
