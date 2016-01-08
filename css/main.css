@@ -287,7 +287,7 @@ body {
   width: 55.7%;
   background: url(../img/bg_ramka.png);
   background-size: 5%;
-  z-index: 2
+  z-index: 2;
 }
 
 #right_frame {
@@ -297,8 +297,8 @@ body {
   width: 1%;
   height: 81.7%;
   background: url(../img/bg_ramka.png);
-  background-size: 2%;
-  z-index: 2
+  background-size: 9%;
+  z-index: 2;
 }
 
 
