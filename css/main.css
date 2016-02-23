@@ -334,7 +334,7 @@ body {
   width: 10%;
   height: 77%;
   position: absolute;
-  left: 43.5%;
+  left: 44.5%;
   top: 10%;
 }
 
@@ -874,7 +874,7 @@ cursor: pointer;
   position: relative;
   vertical-align: top;
   position: absolute;
-
+  z-index: -1;
 }
 
 #col1 {
@@ -1429,7 +1429,7 @@ transition: all 400ms;
   width: 10%;
   height: 77%;
   position: absolute;
-  left: 43.8%;
+  left: 44.2%;
   top: 10%;
 }
 
