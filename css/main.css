@@ -334,7 +334,7 @@ body {
   width: 10%;
   height: 77%;
   position: absolute;
-  left: 44.5%;
+  left: 43.5%;
   top: 10%;
 }
 
@@ -362,9 +362,12 @@ body {
 #avatar {
   position: fixed;
   top: 8%;
-  left: 18.3%;
-  width: 11%;
-  height: 19%;
+  left: 18.8%;
+  width: 128px;
+  height: 130px;
+  background: url(../img/face_temp.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #avatar img {
